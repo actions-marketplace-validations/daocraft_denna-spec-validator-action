@@ -1,3 +1,9 @@
+## [1.0.7](https://github.com/daocraft/denna-spec-validator-action/compare/v1.0.6...v1.0.7) (2026-02-27)
+
+### Bug Fixes
+
+* 🐛 use ajv2020 ([e5ca25b](https://github.com/daocraft/denna-spec-validator-action/commit/e5ca25bc8f8d9608fd3a130d73f6a0b2f2c14d2a))
+
 ## [1.0.6](https://github.com/daocraft/denna-spec-validator-action/compare/v1.0.5...v1.0.6) (2026-02-27)
 
 ### Bug Fixes
