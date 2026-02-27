@@ -1,3 +1,9 @@
+## [1.0.3](https://github.com/daocraft/denna-spec-validator-action/compare/v1.0.2...v1.0.3) (2026-02-27)
+
+### Bug Fixes
+
+* 🐛 resolve action hang and missing logs ([fa1a02e](https://github.com/daocraft/denna-spec-validator-action/commit/fa1a02ed8d13a25fa2e8307b63066f5db6c823a4))
+
 ## [1.0.2](https://github.com/daocraft/denna-spec-validator-action/compare/v1.0.1...v1.0.2) (2026-02-27)
 
 ### Bug Fixes
