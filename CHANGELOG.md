@@ -1,3 +1,9 @@
+## [1.0.5](https://github.com/daocraft/denna-spec-validator-action/compare/v1.0.4...v1.0.5) (2026-02-27)
+
+### Bug Fixes
+
+* 🐛 enforce curl to use ipv4 ([c8fe93e](https://github.com/daocraft/denna-spec-validator-action/commit/c8fe93e3f29eef2c89c8b829fb18f0c088baf94b))
+
 ## [1.0.4](https://github.com/daocraft/denna-spec-validator-action/compare/v1.0.3...v1.0.4) (2026-02-27)
 
 ### Bug Fixes
