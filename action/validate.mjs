@@ -25,7 +25,7 @@ const ajv = new Ajv({
       }
     }
 
-    const result = spawnSync('curl', ['--silent', '--show-error', '--fail', '--location', '--max-time', '15', uri], {
+    const result = spawnSync('curl', ['--silent', '--show-error', '--fail', '--location', '--ipv4', '--http1.1', '--connect-timeout', '10', '--max-time', '20', uri], {
       encoding: 'utf-8',
       timeout: 20000,
     });
