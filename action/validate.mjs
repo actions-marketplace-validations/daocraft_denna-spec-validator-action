@@ -1,5 +1,6 @@
 import { readFileSync, existsSync, appendFileSync } from 'fs';
 import { resolve, dirname, join } from 'path';
+import { spawnSync } from 'child_process';
 import { glob } from 'glob';
 import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
@@ -24,18 +25,14 @@ const ajv = new Ajv({
       }
     }
 
-    const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 15000);
-    let response;
-    try {
-      response = await fetch(uri, { signal: controller.signal });
-    } finally {
-      clearTimeout(timeout);
+    const result = spawnSync('curl', ['--silent', '--show-error', '--fail', '--location', '--max-time', '15', uri], {
+      encoding: 'utf-8',
+      timeout: 20000,
+    });
+    if (result.error || result.status !== 0) {
+      throw new Error(`Failed to fetch schema: ${uri} — ${result.stderr || result.error?.message}`);
     }
-    if (!response.ok) {
-      throw new Error(`Failed to fetch schema: ${uri} (${response.status})`);
-    }
-    return response.json();
+    return JSON.parse(result.stdout);
   }
 });
 addFormats(ajv);
