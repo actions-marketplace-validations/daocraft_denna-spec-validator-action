@@ -1,3 +1,9 @@
+## [1.0.2](https://github.com/daocraft/denna-spec-validator-action/compare/v1.0.1...v1.0.2) (2026-02-27)
+
+### Bug Fixes
+
+* 🐛 handle hanged fetches ([509350c](https://github.com/daocraft/denna-spec-validator-action/commit/509350c885d67c3c2c8eaef38612b160f940fc10))
+
 ## [1.0.1](https://github.com/daocraft/denna-spec-validator-action/compare/v1.0.0...v1.0.1) (2026-02-27)
 
 ## 1.0.0 (2026-02-27)
